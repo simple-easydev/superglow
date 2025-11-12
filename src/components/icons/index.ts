@@ -7,3 +7,4 @@ export { EditIcon } from './EditIcon';
 export { ArrowRightIcon } from './ArrowRightIcon';
 export { ImageUploadIcon } from './ImageUploadIcon';
 export { CheckIcon } from './CheckIcon';
+export { ChevronDownIcon } from './ChevronDownIcon';
