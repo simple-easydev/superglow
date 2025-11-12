@@ -8,3 +8,5 @@ export { ArrowRightIcon } from './ArrowRightIcon';
 export { ImageUploadIcon } from './ImageUploadIcon';
 export { CheckIcon } from './CheckIcon';
 export { ChevronDownIcon } from './ChevronDownIcon';
+export { PlusIcon } from './PlusIcon';
+export { XIcon } from './XIcon';

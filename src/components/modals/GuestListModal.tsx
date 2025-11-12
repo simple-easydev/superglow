@@ -4,6 +4,7 @@ import {
   DialogContent,
 } from '@/components/ui/dialog';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { PlusIcon, XIcon } from '@/components/icons';
 
 interface Guest {
   id: string;
@@ -45,7 +46,12 @@ export const GuestListModal: React.FC<GuestListModalProps> = ({
             <h2 className="text-blue-950 text-3xl font-semibold font-heading leading-9">
               Guest List
             </h2>
-            
+            <button 
+              onClick={onClose}
+              className="text-slate-400 hover:text-slate-600 transition-colors"
+            >
+              <XIcon />
+            </button>
           </div>
 
           {/* Subtitle */}
@@ -54,7 +60,7 @@ export const GuestListModal: React.FC<GuestListModalProps> = ({
           </p>
 
           {/* Guest List with ScrollArea */}
-          <ScrollArea className="flex-1 pr-4">
+          <ScrollArea className="flex-1">
             <div className="flex flex-col gap-3">
               {guests.map((guest) => (
                 <button
@@ -84,9 +90,7 @@ export const GuestListModal: React.FC<GuestListModalProps> = ({
               onClick={onAddDetails}
               className="w-14 h-14 bg-blue-950 rounded-full flex items-center justify-center hover:bg-blue-950/90 transition-colors"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 5V19M5 12H19" stroke="#66FFB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <PlusIcon />
             </button>
           </div>
         </div>
